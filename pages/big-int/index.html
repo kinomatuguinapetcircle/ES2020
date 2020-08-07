@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Int</title>
+</head>
+<body>
+    <script>
+        
+        let regularInt, added;
+        regularInt = 2 ** 100;
+        newBigInt = 2n ** 100n;
+        
+        const x = Number.MAX_SAFE_INTEGER + 1;
+        const y = Number.MAX_SAFE_INTEGER + 2;
+
+        console.log(Number.MAX_SAFE_INTEGER);
+
+        console.log(x);
+
+        console.log(x === y);
+        
+
+        console.log(`Old Int ${regularInt} and has type of ${typeof regularInt}`)
+        console.log(`Big Int ${newBigInt} and has type of ${typeof newBigInt}`)
+
+    </script>
+</body>
+</html>

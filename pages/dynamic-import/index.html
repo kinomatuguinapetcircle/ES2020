@@ -1,0 +1,17 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Import</title>
+</head>
+<body>
+    
+    <script>
+        async function load() {
+            let module = await import('./module.js');
+            module.helloWorld(); // Hello!
+        }
+        load();
+    </script>
+</body>
+</html>
